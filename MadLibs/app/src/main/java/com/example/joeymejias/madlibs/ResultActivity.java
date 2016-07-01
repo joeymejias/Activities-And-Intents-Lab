@@ -42,7 +42,8 @@ public class ResultActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                setContentView(R.layout.activity_main);
+                startActivity(new Intent(v.getContext(),MainActivity.class));
+
             }
         });
     }

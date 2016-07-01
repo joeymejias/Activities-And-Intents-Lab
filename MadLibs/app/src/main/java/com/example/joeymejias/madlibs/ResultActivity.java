@@ -1,9 +1,12 @@
 package com.example.joeymejias.madlibs;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -34,5 +37,13 @@ public class ResultActivity extends AppCompatActivity {
                 + " family. Usually, you go to some place that is near a " + editText3 +
                 " or up on a " + editText4 + ". A good vacation place is one where you can ride " +
                 editText5 + " or play " + editText6 +".");
+
+        final Button button = (Button) findViewById(R.id.goBack);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                setContentView(R.layout.activity_main);
+            }
+        });
     }
 }

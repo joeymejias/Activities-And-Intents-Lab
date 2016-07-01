@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.example.joeymejias.madlibs.MainActivity">
+    tools:context="com.example.joeymejias.madlibs.MainActivity"
+    android:id="@+id/newLib">
 
     <EditText
         android:layout_width="match_parent"
